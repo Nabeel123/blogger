@@ -1,13 +1,26 @@
-import React from "react"
-// import { Link } from "gatsby"
-import { graphql, StaticQuery } from "gatsby"
+// import React from "react"
+// // import { Link } from "gatsby"
+// import { graphql, StaticQuery, useStaticQuery } from "gatsby"
 
-import Layout from "../components/layout"
-import SEO from "../components/seo"
-
-
+// import Layout from "../components/layout"
+// import SEO from "../components/seo"
 
 
-export default () => (
-    <h1 style={{ textAlign:`center` }}> Products </h1>
-)
+
+
+// class Products extends React.Component {
+
+//     componentDidMount() {
+//         fetch('https://jsonplaceholder.typicode.com/todos/1')
+//             .then(response => response.json())
+//             .then(json => console.log(json))
+//     }
+
+//     render() {
+//         <Layout>
+//             <SEO title="Products" />
+//             <h1> Products Page </h1>
+//         </Layout>
+
+//     };
+// } 
