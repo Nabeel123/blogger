@@ -620,3 +620,22 @@ pre tt:after {
     font-size: 100%;
   }
 }
+
+
+.d-flex{
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+.card {
+  text-align: center;
+  width: 280px;
+  border:1px solid red;
+  padding: 30px;
+  margin: 10px;
+}
+.card img {
+  width:150px;
+  height: auto;
+  border-radius: 50%;
+}
