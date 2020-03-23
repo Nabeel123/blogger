@@ -1,14 +1,10 @@
 import React from "react"
-// import { Link } from "gatsby"
-import { graphql, StaticQuery, useStaticQuery } from "gatsby"
-
 import Layout from "../components/layout"
 import SEO from "../components/seo"
 
 
 
-
-class Products extends React.Component {
+export default class Products extends React.Component {
 
     state = {
         fetchedData: [],
@@ -26,7 +22,6 @@ class Products extends React.Component {
 
     render() {
         const { fetchedData } = this.state
-        console.log(fetchedData);
         return (
             <Layout>
                 <SEO title="Products" />
@@ -36,7 +31,7 @@ class Products extends React.Component {
                     {fetchedData.map(person =>
 
                         <div key={person.id} className="card">
-                            <img src={person.avatar} />
+                            <img src={person.avatar} alt={person.last_name} />
                             <p>{person.first_name}</p>
                             <p>{person.email}</p>
                         </div>
@@ -49,6 +44,3 @@ class Products extends React.Component {
 
     };
 }
-
-
-export default Products
